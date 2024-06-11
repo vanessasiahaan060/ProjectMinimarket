@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minimarket_proyek.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="admin_form" prefHeight="411.0" prefWidth="326.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="cashier_id" layoutX="77.0" layoutY="193.0" onAction="#cashierLogin" prefHeight="20.0" prefWidth="190.0" promptText="ID Cashier" styleClass="sidebar" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="cashier_password" layoutX="77.0" layoutY="234.0" onAction="#cashierLogin" prefHeight="20.0" prefWidth="190.0" promptText="Password" styleClass="sidebar" stylesheets="@loginDesign.css" />
+                  <ImageView fitHeight="63.0" fitWidth="51.0" layoutX="138.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Userlogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="47.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="19.0" layoutX="47.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/lock.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="admin_hyperlink" layoutX="89.0" layoutY="364.0" onAction="#switchForm" stylesheets="@loginDesign.css" text="Login Admin Account?" textFill="#b4b8c9">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button fx:id="cashier_loginbtn" layoutX="190.0" layoutY="278.0" mnemonicParsing="false" onAction="#cashierLogin" prefHeight="26.0" prefWidth="74.0" styleClass="white-bg" stylesheets="@loginDesign.css" text="Login" />
+               </children>
+               <stylesheets>
+                  <URL value="@loginDesign.css" />
+                  <URL value="@dashboardDesign.css" />
+               </stylesheets>
+            </AnchorPane>
+            <AnchorPane layoutX="319.0" layoutY="5.0" prefHeight="411.0" prefWidth="326.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="361.0" fitWidth="323.0" layoutX="2.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="cashier_form" layoutX="10.0" layoutY="10.0" prefHeight="411.0" prefWidth="326.0" styleClass="sidebar" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="325.6" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="admin_username" layoutX="77.0" layoutY="193.0" onAction="#adminLogin" prefHeight="20.0" prefWidth="190.0" promptText="Username" styleClass="sidebar" stylesheets="@dashboardDesign.css" />
+                  <PasswordField fx:id="admin_password" layoutX="77.0" layoutY="234.0" onAction="#adminLogin" prefHeight="20.0" prefWidth="190.0" promptText="Password" styleClass="sidebar" stylesheets="@dashboardDesign.css" />
+                  <ImageView fitHeight="63.0" fitWidth="51.0" layoutX="138.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Userlogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="47.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="19.0" layoutX="47.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/lock.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="cashier_hyperlink" layoutX="89.0" layoutY="364.0" onAction="#switchForm" stylesheets="@loginDesign.css" text="Login cashier Account?" textFill="#b9bdd1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button fx:id="admin_loginbtn" layoutX="190.0" layoutY="278.0" mnemonicParsing="false" onAction="#adminLogin" prefHeight="26.0" prefWidth="74.0" styleClass="white-bg" stylesheets="@loginDesign.css" text="Login" />
+               </children>
+               <stylesheets>
+                  <URL value="@loginDesign.css" />
+                  <URL value="@dashboardDesign.css" />
+               </stylesheets>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

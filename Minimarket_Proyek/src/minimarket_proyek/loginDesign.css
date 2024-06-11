@@ -1,0 +1,61 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 6, 2023, 10:35:29 AM
+    Author     : Vanessa Siahaan
+*/
+
+.left-form{
+    -fx-background-color:#035AA6;
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+.right-form{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .4px .4px .4px 0px;
+}
+
+.textfield{
+    -fx-background-color: #035AA6;
+    -fx-background-radius: 8px;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px .8px 0px;
+    -fx-font-color:#fff;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+}
+
+.textfield:focused{
+    -fx-background-color: #035AA6;
+    -fx-border-width: 0px 0px 1.8px 0px;
+}
+
+.login-btn{
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-text-fill:#035AA6;
+    -fx-font-family:"Arial";
+    -fx-font-size:14px;
+}
+
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom, #035AA6, #7688ec);
+    -fx-text-fill:#fff;
+    
+}
+
+.hyperlink{
+    -fx-border-color: transparent;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:14px;
+    -fix-text-fill:#fff;
+}
+
+.hyperlink:hover{
+    -fx-text-fill: #fff;
+}

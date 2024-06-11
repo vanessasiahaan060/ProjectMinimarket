@@ -1,0 +1,162 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 7, 2023, 11:53:26 PM
+    Author     : USER
+*/
+.top-form {
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+  
+}
+
+.semi-top-form {
+    -fx-background-color: #efefef;
+    -fx-border-color: #fffff;
+}
+
+
+.login-btn{
+    -fx-background-color:  linear-gradient(to right, #5e72e4, #627594);
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-text-fill:fff;
+    -fx-font-family:"Helvetica";
+    -font-weight: bold; 
+    -fx-font-size:14px;
+    -border: 2px solid #035AA6;
+    -transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #627594, #5e72e4);
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0); /* Perbaikan sintaks box-shadow */
+}
+
+.login-btn1{
+    -fx-background-color:  #fff;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-text-fill:#000;
+    -fx-font-family:"Helvetica";
+    -font-weight: bold; 
+    -fx-font-size:14px;
+    -border: 2px solid #035AA6;
+    -transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn1:hover {
+    -fx-background-color: linear-gradient(to bottom, #f3de8a, #7e4402);
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0); /* Perbaikan sintaks box-shadow */
+}
+
+
+.shodow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 30px;
+}
+
+
+.card1{
+    -fx-background-color: linear-gradient(to right, #fb6340, #fbb140);
+    -fx-background-radius: 7px;
+    
+}
+
+.card2{
+    -fx-background-color: linear-gradient(to right, #2dce89, #2dcecc);
+    -fx-background-radius: 7px;
+    
+}
+
+.card3{
+    -fx-background-color: linear-gradient(to right, #f5365c, #f56036);
+    -fx-background-radius: 7px;
+    
+}
+
+.textfield{
+    -fx-background-color: linear-gradient(to right, #CED4DA, #EBEFF4);
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-background-radius: 30px;
+}
+
+.yellow-bg{
+  -fx-background-color:  #f3de8a;  
+  -fx-background-radius: 8px;
+    -fx-border-color: #000;
+    -fx-font-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+}
+
+.search{
+    -fx-background-color: transparent;
+    -fx-background-color: #CED4DA;
+    -fx-border-width: 11px;
+    -fx-border-radius: 5px;
+    -fx-padding: 0px 0px 0px 28px;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:14px;
+}
+
+.search:focused{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom,  #c4b786, #7e4402);
+    -fx-border-width: 5px;
+    -fx-border-radius:10px;
+}
+.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom,  #CED4DA, #EBEFF4);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom,  #627594, #EBEFF4);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 5px 5px 0px 0px;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size:50px;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+    
+}
+
+.sidebar {
+     -fx-background-color: linear-gradient(to right, #5e72e4, #627594);
+    -fx-width: 250px;
+    -fx-height: 100%;
+    -fx-position: fixed;
+    -fx-left: 0;
+    -fx-top: 0;
+   -fx-overflow-x: hidden;
+    -fx-padding-top: 20px;
+}
+
+
+
+
+
+
+
